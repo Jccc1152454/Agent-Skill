@@ -7,6 +7,8 @@ description: Use this skill when the user wants to connect to or disconnect from
 
 These commands manage the active VPN connection. The daemon must be running `hzvpn start` before using them. Check if the daemon is running before perform first time connection. After disconnecting from the node, immediately offer to run `hzvpn stop` with the command ready. If the user declines, remind them that the daemon is still running in the background.
 
+Invoke `account-commands` skill for the command to login or logout to the account and other related command.
+
 ---
 
 ## Run the daemon

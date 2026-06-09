@@ -11,9 +11,25 @@ Two installation methods are available: **Quick Install** (automated, recommende
 
 Always ask the user for their OS and preferred method before proceeding.
 
+## Check OS
+
+Run this command via a Bash tool call to detect the user's OS automatically.
+
+```bash
+uname
+```
+
+Interpret the output and proceed to the matching installation section without asking the user:
+
+| Output   | OS      | Proceed to         |
+|----------|---------|--------------------|
+| `Darwin` | macOS   | macOS / Linux step |
+| `Linux`  | Linux   | macOS / Linux step |
+| Error / not found | Windows | Windows step |
+
 ## Quick Install
 
-Runs a single command that automatically detects the OS, downloads the latest binary from GitHub, installs it, adds it to PATH, and cleans up temp files.
+Runs a single command that automatically based on the OS detected.
 
 **Windows** — run in PowerShell:
 ```powershell
@@ -38,6 +54,8 @@ The installer automatically updates the shell profile if the install directory i
 ---
 
 ## Manual Install
+
+If the user prefer to install HZVPN manually, show them these steps based on the OS detected:
 
 ### Windows
 1. Download the latest ZIP: `https://r2.r2hz.top/hzcli_windows1.1.17.zip`

@@ -5,23 +5,23 @@ description: Use this skill when the user asks about logging in or out of HZVPN 
 
 # HZVPN CLI — Account Commands
 
-These commands manage authentication, registered devices, and subscription details.
+These commands manage authentication, registered devices, and subscription details. 
 
 ---
 
-## `hzvpn login`
-Authenticate your HZVPN account. Opens a browser for login or account creation.
+## Login HZVPN account
+Run the command below to authenticate your HZVPN account. The user will be redirect to the browser to get the verification code and paste the verification code to login to the account. Request the verification code from the user to help the user to login their account. Suggest the user to login by running this command in another terminal to ensure the login process smoother.
 
 ```bash
 hzvpn login
 ```
 
-If the device limit is reached, HZVPN lists registered devices and prompts you to remove one before continuing.
+Refer to `login-related-issue.md` if encounter error during account login.
 
 ---
 
-## `hzvpn logout`
-Sign out of the current session.
+## Log out HZVPN account
+Run the command below to sign out of the current session.
 
 ```bash
 hzvpn logout
@@ -29,7 +29,7 @@ hzvpn logout
 
 ---
 
-## `hzvpn devices`
+## List all devices under current HZVPN account
 List all devices registered to the account. The current device is marked with `*`.
 
 ```bash
@@ -52,7 +52,7 @@ Use the list number shown by `hzvpn devices`.
 
 ---
 
-## `hzvpn profile`
+## View HZVPN account details
 View account details.
 
 ```bash
@@ -61,12 +61,14 @@ hzvpn profile
 
 ---
 
-## `hzvpn upgrade`
+## Purchase or upgrade current account membership level
 Upgrade your subscription plan.
 
 ```bash
 hzvpn upgrade
 ```
+
+Refer to `login-related-issue.md` if encounter error or failure during account login.
 
 ---
 
