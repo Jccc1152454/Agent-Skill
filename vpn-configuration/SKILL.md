@@ -25,7 +25,7 @@ hzvpn set --mode intelligent  # only selected traffic (split-tunnel)
 ---
 
 ## Connection Route (`--route`)
-Sets the underlying tunneling method.
+Sets the underlying tunneling method. No sudo is required to change the connection route.
 
 ```bash
 hzvpn set --route proxy      # standard system proxy
