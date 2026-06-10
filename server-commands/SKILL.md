@@ -28,21 +28,21 @@ Each server entry shows:
 
 ---
 
-## Access Tiers
+## Node Access Tiers
 
 Servers are filtered by your subscription plan. You only see servers your account can access.
 
-| Plan  | Accessible servers |
-|-------|--------------------|
-| Free  | FREE only          |
-| VIP   | VIP                |
-| SVIP  | VIP + SVIP         |
+| User Membership Plan  | Accessible servers |
+|-----------------------|--------------------|
+| Free                  | FREE only          |
+| VIP                   | VIP                |
+| SVIP                  | VIP + SVIP         |
 
 > Attempting to connect to a server above your plan tier will fail.
 
 ---
 
-## Server Status
+## Node Server Status
 
 | Status      | Meaning                                        |
 |-------------|------------------------------------------------|

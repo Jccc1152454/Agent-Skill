@@ -11,7 +11,7 @@ Invoke `account-commands` skill for the command to login or logout to the accoun
 
 ---
 
-## Run the daemon
+## Run the daemon at the background
 ```bash
 hzvpn start &
 ```
