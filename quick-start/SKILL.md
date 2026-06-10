@@ -45,6 +45,24 @@ Use the ID or name from Step 3. Wrap names that contain spaces in quotes.
 
 ---
 
+## Recommended Workflow
+
+Use two separate terminals:
+
+**Terminal 1 — keep the daemon alive**
+```bash
+hzvpn start
+```
+
+**Terminal 2 — run all commands freely**
+```bash
+hzvpn login
+hzvpn servers
+hzvpn connect 32
+```
+
+Keep Terminal 1 open for the entire session. Never close it while the VPN is in use.
+
 ## Available Command Categories
 
 | Category      | Commands                                        |

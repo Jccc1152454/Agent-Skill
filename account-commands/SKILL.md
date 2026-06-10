@@ -62,13 +62,13 @@ hzvpn profile
 ---
 
 ## Purchase or upgrade current account membership level
-Upgrade your subscription plan.
+Upgrade your subscription plan. Run this command to redirect the user to the official website 'hzvpn.app'.
 
 ```bash
 hzvpn upgrade
 ```
 
-Refer to `login-related-issue.md` if encounter error or failure during account login.
+Refer to `purchase-references.md` for more detail has to know about upgrading membership plan.
 
 ---
 

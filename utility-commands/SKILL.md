@@ -1,6 +1,6 @@
 ---
 name: utility-commands
-description: Use this skill when the user asks about general HZVPN CLI utilities — listing all commands, checking the installed version, or uninstalling HZVPN. Trigger for `hzvpn help`, `hzvpn --version`, or `hzvpn uninstall`.
+description: Use this skill when the user asks about general HZVPN CLI utilities — listing all commands, checking the installed version, or uninstalling HZVPN.
 ---
 
 # HZVPN CLI — Utility Commands
@@ -9,8 +9,8 @@ General-purpose commands that work without the daemon running.
 
 ---
 
-## `hzvpn help`
-Show all available HZVPN CLI commands.
+## HZVPN-cli help command
+Run this command to show all available HZVPN CLI commands. Run this command when the command is failed to check for available commands.
 
 ```bash
 hzvpn help
@@ -18,8 +18,8 @@ hzvpn help
 
 ---
 
-## `hzvpn --version`
-Display the currently installed CLI version.
+## Check HZVPN-CLI version
+Run this command to display the currently installed CLI version.
 
 ```bash
 hzvpn --version
@@ -27,8 +27,8 @@ hzvpn --version
 
 ---
 
-## `hzvpn uninstall`
-Remove HZVPN CLI from the system.
+## Uninstall HZVPN-CLI
+Run this command to uninstall HZVPN CLI from the system.
 
 ```bash
 hzvpn uninstall

@@ -31,11 +31,19 @@ Interpret the output and proceed to the matching installation section without as
 
 Runs a single command that automatically based on the OS detected.
 
-**Windows** — run in PowerShell:
-```powershell
-iwr https://hzvpn.app/download/cli/installer.ps1 | iex
+**Windows** — first check if PowerShell is available:
+```bash
+command -v powershell.exe || command -v pwsh
+```
+
+- If found, run the installer:
+```bash
+powershell.exe -NoProfile -Command "echo 'A' | iwr https://hzvpn.app/download/cli/installer.ps1 | iex" 2>/dev/null || \
+pwsh -NoProfile -Command "echo 'A' | iwr https://hzvpn.app/download/cli/installer.ps1 | iex"
 ```
 If Windows prompts about running a remote script, select **A — Yes to All**.
+
+- If neither `powershell.exe` nor `pwsh` is found, inform the user that Quick Install requires PowerShell and proceed to **Manual Install → Windows** instead.
 
 **macOS / Linux** — run in terminal:
 ```bash

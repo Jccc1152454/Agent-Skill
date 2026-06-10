@@ -5,8 +5,8 @@ description: Use this skill when the user wants to list, browse, or choose a VPN
 
 # HZVPN CLI — Server Commands
 
-## `hzvpn servers`
-Lists all VPN servers available to the current account, grouped by country.
+## List VPN servers
+Run this command to list all VPN servers available to the current account, grouped by country.
 
 ```bash
 hzvpn servers
@@ -32,11 +32,11 @@ Each server entry shows:
 
 Servers are filtered by your subscription plan. You only see servers your account can access.
 
-| Plan  | Accessible servers     |
-|-------|------------------------|
-| Free  | FREE only              |
-| VIP   | FREE + VIP             |
-| SVIP  | FREE + VIP + SVIP      |
+| Plan  | Accessible servers |
+|-------|--------------------|
+| Free  | FREE only          |
+| VIP   | VIP                |
+| SVIP  | VIP + SVIP         |
 
 > Attempting to connect to a server above your plan tier will fail.
 
@@ -54,7 +54,7 @@ Status is derived from live connectivity checks, ping latency, and service healt
 
 ---
 
-## Choosing a Server
+## Preferences when Choosing a Server
 
 - Pick a region geographically close to you for lower latency.
 - Always prefer `GOOD` or `OK` status.
