@@ -10,9 +10,10 @@ Follow these steps in order after installation to get connected.
 ---
 
 ## Step 1 — Start the daemon
+The daemon must be run in the background to prevent claude code stops receving input from the user.
 Open a terminal and run:
 ```bash
-hzvpn start
+hzvpn start &
 ```
 Keep this terminal open. The daemon must stay running for all VPN features to work.
 
@@ -51,7 +52,7 @@ Use two separate terminals:
 
 **Terminal 1 — keep the daemon alive**
 ```bash
-hzvpn start
+hzvpn start &
 ```
 
 **Terminal 2 — run all commands freely**

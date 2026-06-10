@@ -1,27 +1,26 @@
 ---
 name: daemon-commands
-description: Use this skill when the user asks about starting or stopping the HZVPN daemon, or uses `hzvpn start` / `hzvpn stop`. Trigger when the user asks why VPN commands aren't working, how to restart HZVPN, or anything about the HZVPN background service.
+description: Use this skill when the user asks about starting or stopping the HZVPN daemon, or uses `hzvpn start &` / `hzvpn stop`. Trigger when the user asks why VPN commands aren't working, how to restart HZVPN, or anything about the HZVPN background service.
 ---
 
 # HZVPN CLI — Daemon Commands
 
-The daemon is the background process that powers all VPN features. It must be running before any VPN commands will work.
+The daemon is the background process that powers all VPN features. It must be running before any VPN commands will work. The daemon must be run in the background to prevent claude code stops receving input from the user.
 
 ---
 
-## `hzvpn start`
+## Start the hzvpn-cli daemon in the background
 Starts the background daemon.
 
 ```bash
-hzvpn start
+hzvpn start &
 ```
 
-- Start this once per session — it serves all terminal sessions from that point on.
-- Keep the terminal running this command open. Closing it stops the daemon.
+The daemon has to be run in the background when the user want to continue to using hzvpn-cli.
 
 ---
 
-## `hzvpn stop`
+## Stop the hzvpn-cli daemon
 Stops the running daemon.
 
 ```bash
@@ -36,5 +35,5 @@ hzvpn stop
 
 | Command        | Effect                                                   |
 |----------------|----------------------------------------------------------|
-| `hzvpn start`  | Starts the daemon — required before any VPN features     |
+| `hzvpn start &`  | Starts the daemon — required before any VPN features     |
 | `hzvpn stop`   | Stops the daemon and drops all active VPN connections    |

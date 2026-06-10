@@ -29,19 +29,17 @@ Interpret the output and proceed to the matching installation section without as
 
 ## Quick Install
 
-Runs a single command that automatically based on the OS detected.
+Runs a single command that downloads and executes the installer automatically based on the detected OS.
 
-**Windows** — first check if PowerShell is available:
+**Windows** — first confirm PowerShell is available:
 ```bash
 command -v powershell.exe || command -v pwsh
 ```
 
-- If found, run the installer:
-```bash
-powershell.exe -NoProfile -Command "echo 'A' | iwr https://hzvpn.app/download/cli/installer.ps1 | iex" 2>/dev/null || \
-pwsh -NoProfile -Command "echo 'A' | iwr https://hzvpn.app/download/cli/installer.ps1 | iex"
+- If found, run the installer in PowerShell:
+```powershell
+$wc = New-Object System.Net.WebClient; $script = $wc.DownloadString('https://hzvpn.app/download/cli/installer.ps1'); $script = $script -replace 'Read-Host[^\n]*', 'A'; iex $script
 ```
-If Windows prompts about running a remote script, select **A — Yes to All**.
 
 - If neither `powershell.exe` nor `pwsh` is found, inform the user that Quick Install requires PowerShell and proceed to **Manual Install → Windows** instead.
 
@@ -50,14 +48,18 @@ If Windows prompts about running a remote script, select **A — Yes to All**.
 curl -fsSL https://hzvpn.app/download/cli/installer.sh | bash
 ```
 
+Once the installer finishes, run the verification command in the **Installation Verification** section and confirm the result with the user.
+
+Invoke `quick-start` skill if required to tell the user for steps to start to use hzvpn-cli.
+
 ### Install locations
+
+Here is the folder location for hzvpn-cli after installation.
+
 | Platform      | Path                            |
 |---------------|---------------------------------|
 | Windows       | `%LOCALAPPDATA%\Programs\HZVPN` |
 | macOS / Linux | `~/.local/bin`                  |
-
-### PATH auto-config
-The installer automatically updates the shell profile if the install directory isn't already in PATH. Supported profiles: `.zshrc`, `.bashrc`, `.bash_profile`, `.profile`.
 
 ---
 
@@ -90,7 +92,7 @@ source ~/.zshrc
 
 ---
 
-## Verify
+## Installation Verification
 ```bash
 hzvpn --version
 ```
