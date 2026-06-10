@@ -56,6 +56,7 @@ Status is derived from live connectivity checks, ping latency, and service healt
 
 ## Preferences when Choosing a Server
 
+- **Prefer higher-tier nodes: SVIP > VIP > FREE.** Always connect to the highest tier your plan allows.
 - Pick a region geographically close to you for lower latency.
 - Always prefer `GOOD` or `OK` status.
 - If your current server is slow, switch to a higher-tier server if your plan allows.

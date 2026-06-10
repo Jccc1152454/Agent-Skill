@@ -36,6 +36,7 @@ hzvpn connect "DE Free 1"
 
 - Get the server ID or name from `hzvpn servers`.
 - Wrap names containing spaces in quotes.
+- **Prefer higher-tier nodes when selecting a server: SVIP > VIP > FREE.** Always pick the highest tier your account can access and that has a `GOOD` or `OK` status.
 
 ---
 

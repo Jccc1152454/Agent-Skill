@@ -52,15 +52,6 @@ Once the installer finishes, run the verification command in the **Installation 
 
 Invoke `quick-start` skill if required to tell the user for steps to start to use hzvpn-cli.
 
-### Install locations
-
-Here is the folder location for hzvpn-cli after installation.
-
-| Platform      | Path                            |
-|---------------|---------------------------------|
-| Windows       | `%LOCALAPPDATA%\Programs\HZVPN` |
-| macOS / Linux | `~/.local/bin`                  |
-
 ---
 
 ## Manual Install

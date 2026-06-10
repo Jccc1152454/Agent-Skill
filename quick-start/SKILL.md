@@ -34,6 +34,8 @@ hzvpn servers
 ```
 Shows all servers you have access to. Each entry shows an **ID**, **name**, access **level** (FREE / VIP / SVIP), and **status** (GOOD / LOW / DOWN).
 
+When picking a server, prefer higher-tier nodes: **SVIP > VIP > FREE**. Always choose the highest tier your plan allows with a `GOOD` or `OK` status.
+
 ---
 
 ## Step 4 — Connect
