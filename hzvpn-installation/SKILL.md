@@ -1,5 +1,5 @@
 ---
-name: installation
+name: hzvpn-installation
 description: Use this skill when the user wants to install HZVPN CLI on any platform. Covers quick install (one-command automated) and manual install (step-by-step) for Windows, macOS, and Linux. Trigger whenever the user mentions installing, setting up, or downloading HZVPN CLI, or asks why `hzvpn` is not found after install.
 ---
 
@@ -50,36 +50,14 @@ curl -fsSL https://hzvpn.app/download/cli/installer.sh | bash
 
 Once the installer finishes, run the verification command in the **Installation Verification** section and confirm the result with the user.
 
-Invoke `quick-start` skill if required to tell the user for steps to start to use hzvpn-cli.
+Invoke `hzvpn-node-connection` skill if user want to connect to VPN.
 
 ---
 
 ## Manual Install
 
-If the user prefer to install HZVPN manually, show them these steps based on the OS detected:
-
-### Windows
-1. Download the latest ZIP: `https://r2.r2hz.top/hzcli_windows1.1.17.zip`
-2. Extract the archive.
-3. Move these 4 files into `%LOCALAPPDATA%\Programs\HZVPN`:
-   - `hzvpn.exe`
-   - `MSVCP140.dll`
-   - `VCRUNTIME140.dll`
-   - `VCRUNTIME140_1.dll`
-4. Add `%LOCALAPPDATA%\Programs\HZVPN` to User PATH:
-   - `Win + S` → search **Environment Variables** → **Edit the system environment variables**
-   - **Environment Variables** → under **User variables**, select **Path** → **Edit** → **New**
-   - Paste the path → **OK** on all windows
-5. Restart the terminal.
-
-### macOS / Linux
-```bash
-mkdir -p ~/.local/bin
-mv hzvpn ~/.local/bin/
-chmod +x ~/.local/bin/hzvpn
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc  # or ~/.bashrc
-source ~/.zshrc
-```
+If the user prefer to install HZVPN manually, redirect them to the link below:
+[HZVPN manual installation](https://www.hzvpn.app/cli-docs/en/guides/installation/#manual-installation)
 
 ---
 

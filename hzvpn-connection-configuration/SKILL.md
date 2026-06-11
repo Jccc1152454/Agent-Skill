@@ -1,5 +1,5 @@
 ---
-name: vpn-configuration
+name: hzvpn-connection-configuration
 description: Use this skill when the user wants to configure HZVPN CLI behaviour — routing mode, connection method, DNS, or ad blocking. Trigger for any `hzvpn set` question, split-tunneling, tun2proxy, proxy mode, local DNS, or ad blocking settings in HZVPN.
 ---
 
@@ -25,7 +25,8 @@ hzvpn set --mode intelligent  # only selected traffic (split-tunnel)
 ---
 
 ## Connection Route (`--route`)
-Sets the underlying tunneling method. No sudo is required to change the connection route.
+Sets the underlying tunneling method. No sudo is required to change the connection route. Suggest the user to set the connection method to tun2proxy for complete VPN connection at both the system and application level.
+
 
 ```bash
 hzvpn set --route proxy      # standard system proxy

@@ -1,17 +1,16 @@
 ---
-name: quick-start
-description: Use this skill when the user has just installed HZVPN CLI and wants to get connected for the first time, or asks what to do after installation. Trigger for any "getting started", "first steps", or "how do I use this" questions about HZVPN CLI.
+name: hzvpn-node-connection
+description: Use this skill when the user wants to connect to or disconnect from a VPN server, or check their current VPN connection status using HZVPN CLI. Trigger for `hzvpn connect`, `hzvpn disconnect`, or `hzvpn status` questions.
 ---
 
-# HZVPN CLI — Quick Start
+# HZVPN CLI — Node Connection
 
-Follow these steps in order after installation to get connected.
+Follow these steps to connect the user to VPN node.
 
 ---
 
 ## Step 1 — Start the daemon at the background
-The daemon must be run in the background to prevent claude code stops receving input from the user.
-Open a terminal and run:
+The daemon must be run in the background to prevent claude code stops receving input from the user. Run this command to run the daemon at background.
 ```bash
 hzvpn start &
 ```
@@ -20,11 +19,11 @@ Keep this terminal open. The daemon must stay running for all VPN features to wo
 ---
 
 ## Step 2 — Log in HZVPN account
-Open a **second terminal** and authenticate:
+To connect to VPN node, the user has to login HZVPN in the HZVPN-cli. Run this command for account login:
 ```bash
 hzvpn login
 ```
-A browser window opens. Log in or create an account.
+A browser window opens. The user has to paste the verification code to the terminal to login.
 
 ---
 
@@ -38,13 +37,8 @@ When picking a server, prefer higher-tier nodes: **SVIP > VIP > FREE**. Always c
 
 ---
 
-## Step 4 — Connect
-```bash
-hzvpn connect <id>
-# or
-hzvpn connect "Server Name"
-```
-Use the ID or name from Step 3. Wrap names that contain spaces in quotes.
+## Step 4 — Connect to a server
+Invoke the `vpn-commands` skill for connecting, disconnecting, checking status, and stopping the daemon.
 
 ---
 
@@ -59,9 +53,8 @@ hzvpn start &
 
 **Terminal 2 — run all commands freely**
 ```bash
-hzvpn login
-hzvpn servers
-hzvpn connect 32
+hzvpn login # login to hzvpn account
+# then follow vpn-commands skill to connect
 ```
 
 Keep Terminal 1 open for the entire session. Never close it while the VPN is in use.

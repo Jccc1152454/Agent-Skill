@@ -1,5 +1,5 @@
 ---
-name: account-commands
+name: hzvpn-account
 description: Use this skill when the user asks about logging in or out of HZVPN CLI, managing registered devices, viewing their profile, or upgrading their plan. Trigger for `hzvpn login`, `hzvpn logout`, `hzvpn devices`, `hzvpn profile`, `hzvpn upgrade`, or device limit issues.
 ---
 
