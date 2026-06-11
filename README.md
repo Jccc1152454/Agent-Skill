@@ -1,33 +1,78 @@
-# Agent-Skill
+# HZVPN CLI Skills
+
+AI agent skills for the HZVPN CLI — compatible with Claude Code, Codex CLI, Cursor, Gemini CLI, and more.
+
+[中文文档](./README_ZH.md)
+
+---
+
+## Prerequisites
+
+- **Node.js 16+** is required. [Download Node.js](https://nodejs.org)
+
+---
 
 ## Installation
 
-1. Run the command below to install the skills.
+Install the skills interactively — you will be prompted to select which skills to install and which agent to target.
+
 ```bash
+npx skills add hzvpn-cli-skills
+```
+
+**Recommended flags for a faster setup:**
+
+| Flag | Description |
+|------|-------------|
+| `-g` | Install globally (available across all projects) |
+| `-y` | Accept all prompts automatically |
+
+```bash
+# Global install, auto-accept all prompts
 npx skills add hzvpn-cli-skills -g -y
 ```
 
-> If this is your first time, make sure Node.js 16+ is installed. You may be prompted to install the skills package if it is not installed before. -g flag is for global install and -y is to accept the installation.
->>  If you prefer to install in your current project, exclude -g flag during installation.
+> Omit `-g` if you prefer a project-local install.
 
-## Check Skills Installed
+---
 
-Run the command below to check the skills installed in your current device.
+## Manage Skills
+
+### List installed skills
+
 ```bash
 npx skills list
 ```
 
-## Remove Skills Installed
+### Remove a skill
 
-Run the command below to remove the skill.
 ```bash
-npx skills remove [skills]
+npx skills remove [skill-name]
 ```
 
+### Update to the latest version
 
-## Update version
-
-Run the command below to update the hzvpn-cli-skills version if there is new version published.
 ```bash
 npx skills update hzvpn-cli-skills
 ```
+
+---
+
+## Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| `quick-start` | Get connected for the first time |
+| `vpn-commands` | Connect, disconnect, and check VPN status |
+| `server-commands` | Browse and select VPN servers |
+| `vpn-configuration` | Configure routing, DNS, and ad blocking |
+| `daemon-commands` | Start and stop the HZVPN background service |
+| `account-commands` | Login, logout, and manage your account |
+| `installation` | Install HZVPN CLI on any platform |
+| `utility-commands` | General utilities — version, help, uninstall |
+
+---
+
+## License
+
+MIT
