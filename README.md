@@ -17,7 +17,7 @@ AI agent skills for the HZVPN CLI — compatible with Claude Code, Codex CLI, Cu
 Install the skills interactively — you will be prompted to select which skills to install and which agent to target.
 
 ```bash
-npx skills add hzvpn-cli-skills
+npx skills add https://github.com/Jccc1152454/Agent-Skill
 ```
 
 **Recommended flags for a faster setup:**
@@ -29,7 +29,7 @@ npx skills add hzvpn-cli-skills
 
 ```bash
 # Global install, auto-accept all prompts
-npx skills add hzvpn-cli-skills -g -y
+npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 ```
 
 > Omit `-g` if you prefer a project-local install.
