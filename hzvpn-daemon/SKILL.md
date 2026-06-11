@@ -1,5 +1,5 @@
 ---
-name: daemon-commands
+name: hzvpn-daemon
 description: Use this skill when the user asks about starting or stopping the HZVPN daemon, or uses `hzvpn start &` / `hzvpn stop`. Trigger when the user asks why VPN commands aren't working, how to restart HZVPN, or anything about the HZVPN background service.
 ---
 

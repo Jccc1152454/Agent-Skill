@@ -1,5 +1,5 @@
 ---
-name: utility-commands
+name: hzvpn-cli-utility
 description: Use this skill when the user asks about general HZVPN CLI utilities — listing all commands, checking the installed version, or uninstalling HZVPN.
 ---
 

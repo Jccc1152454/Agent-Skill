@@ -1,5 +1,5 @@
 ---
-name: server-commands
+name: hzvpn-server
 description: Use this skill when the user wants to list, browse, or choose a VPN server in HZVPN CLI. Trigger for `hzvpn servers`, questions about server status, server access tiers (Free/VIP/SVIP), or picking the best server to connect to.
 ---
 
