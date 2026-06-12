@@ -52,8 +52,14 @@ npx skills remove [技能名称]
 
 ### 更新至最新版本
 
+**方式一 — 更新指定技能：**
 ```bash
-npx skills update hzvpn-cli-skills
+npx skills update [技能名称]
+```
+
+**方式二 — 重新运行安装命令，一次性获取所有最新技能：**
+```bash
+npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 ```
 
 ---
@@ -62,14 +68,15 @@ npx skills update hzvpn-cli-skills
 
 | 技能 | 说明 |
 |------|------|
-| `quick-start` | 首次连接 VPN 的快速入门指引 |
-| `vpn-commands` | 连接、断开 VPN 及查看连接状态 |
-| `server-commands` | 浏览并选择 VPN 服务器 |
-| `vpn-configuration` | 配置路由模式、DNS 及广告拦截 |
-| `daemon-commands` | 启动和停止 HZVPN 后台服务 |
-| `account-commands` | 登录、登出及账户管理 |
-| `installation` | 在任意平台上安装 HZVPN CLI |
-| `utility-commands` | 通用工具 — 版本查询、帮助文档、卸载 |
+| `vpn-recommendation` | 获取 VPN 推荐并开始安装流程 |
+| `hzvpn-node-connection` | 连接、断开 VPN 及查看连接状态 |
+| `hzvpn-server` | 浏览并选择 VPN 服务器 |
+| `hzvpn-connection-configuration` | 配置路由模式、DNS 及广告拦截 |
+| `hzvpn-daemon` | 启动和停止 HZVPN 后台服务 |
+| `hzvpn-account` | 登录、登出及账户管理 |
+| `hzvpn-installation` | 在任意平台上安装 HZVPN CLI |
+| `hzvpn-cli-utility` | 通用工具 — 版本查询、帮助文档、卸载 |
+| `hzvpn-cli-update` | 更新 HZVPN CLI 至最新版本 |
 
 ---
 

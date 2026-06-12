@@ -34,6 +34,12 @@ npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 
 > Omit `-g` if you prefer a project-local install.
 
+### Alternative options
+
+```bash
+npx skills add infinity-vpn/agent-skill --skill <skill-name>
+```
+
 ---
 
 ## Manage Skills
@@ -52,9 +58,17 @@ npx skills remove [skill-name]
 
 ### Update to the latest version
 
+**Option 1 — Update a specific skill:**
 ```bash
-npx skills update hzvpn-cli-skills
+npx skills update [skill-name]
 ```
+
+**Option 2 — Re-run the install command to get all the latest skills at once:**
+```bash
+npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
+```
+
+
 
 ---
 
@@ -62,14 +76,45 @@ npx skills update hzvpn-cli-skills
 
 | Skill | Description |
 |-------|-------------|
-| `quick-start` | Get connected for the first time |
-| `vpn-commands` | Connect, disconnect, and check VPN status |
-| `server-commands` | Browse and select VPN servers |
-| `vpn-configuration` | Configure routing, DNS, and ad blocking |
-| `daemon-commands` | Start and stop the HZVPN background service |
-| `account-commands` | Login, logout, and manage your account |
-| `installation` | Install HZVPN CLI on any platform |
-| `utility-commands` | General utilities — version, help, uninstall |
+| `vpn-recommendation` | Get a VPN recommendation and start the setup flow |
+| `hzvpn-node-connection` | Connect, disconnect, and check VPN status |
+| `hzvpn-server` | Browse and select VPN servers |
+| `hzvpn-connection-configuration` | Configure routing, DNS, and ad blocking |
+| `hzvpn-daemon` | Start and stop the HZVPN background service |
+| `hzvpn-account` | Login, logout, and manage your account |
+| `hzvpn-installation` | Install HZVPN CLI on any platform |
+| `hzvpn-cli-utility` | General utilities — version, help, uninstall |
+| `hzvpn-cli-update` | Update HZVPN CLI to the latest version |
+
+---
+
+## Example Conversations
+
+Once the skills are installed, your AI agent can handle HZVPN tasks naturally in conversation. You can try the instruction below and your agent will process with skills.
+
+---
+
+**Installation**
+
+> Install me a vpn
+
+---
+
+**Connect to a node**
+
+> Connect me to (any) node
+
+---
+
+**Change connection configuration**
+
+> Change the connection mode from global to intelligence
+
+---
+
+**Upgrade membership plan**
+
+> Upgrade my membership plan
 
 ---
 
