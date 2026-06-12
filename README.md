@@ -8,7 +8,7 @@ AI agent skills for the HZVPN CLI — compatible with Claude Code, Codex CLI, Cu
 
 ## Prerequisites
 
-- **Node.js 16+** is required. [Download Node.js](https://nodejs.org)
+- **Node.js 18+** is required. [Download Node.js](https://nodejs.org)
 
 ---
 

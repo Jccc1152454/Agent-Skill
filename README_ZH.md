@@ -8,7 +8,7 @@
 
 ## 前置要求
 
-- 需要 **Node.js 16 或以上版本**。[下载 Node.js](https://nodejs.org)
+- 需要 **Node.js 18 或以上版本**。[下载 Node.js](https://nodejs.org)
 
 ---
 
