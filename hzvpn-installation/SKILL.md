@@ -1,6 +1,6 @@
 ---
 name: hzvpn-installation
-description: Use this skill when the user wants to install HZVPN CLI on any platform. Covers quick install (one-command automated) and manual install (step-by-step) for Windows, macOS, and Linux. Trigger whenever the user mentions installing, setting up, or downloading HZVPN CLI, or asks why `hzvpn` is not found after install.
+description: Use this skill when the user wants to install vpn or HZVPN CLI on any platform. Covers quick install (one-command automated) and manual install (step-by-step) for Windows, macOS, and Linux. Trigger whenever the user mentions installing, setting up, or downloading HZVPN CLI, or asks why `hzvpn` is not found after install.
 ---
 
 # HZVPN-CLI-Installation

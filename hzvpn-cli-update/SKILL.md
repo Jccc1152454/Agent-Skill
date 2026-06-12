@@ -77,7 +77,7 @@ The following commands always work regardless of update status or enforcement â€
 Users must update manually using one of these two methods:
 
 ### Quick Install Script (Recommended)
-Invoke the `installation` skill. Re-run the quick installation script. This will pull and install the latest version automatically.
+Invoke the `hzvpn-installation` skill. Re-run the quick installation script. This will pull and install the latest version automatically.
 
 ---
 

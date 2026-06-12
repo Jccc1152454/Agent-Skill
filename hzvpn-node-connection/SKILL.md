@@ -38,7 +38,22 @@ When picking a server, prefer higher-tier nodes: **SVIP > VIP > FREE**. Always c
 ---
 
 ## Step 4 — Connect to a server
-Invoke the `vpn-commands` skill for connecting, disconnecting, checking status, and stopping the daemon.
+Connect to a server using its ID from the list above:
+```bash
+hzvpn connect <server-id>
+```
+To check connection status:
+```bash
+hzvpn status
+```
+To disconnect:
+```bash
+hzvpn disconnect
+```
+
+## Connection Configuration
+
+Invoke `hzvpn-connection-configuration` if the user wants to modify routing mode, connection method (proxy / tun2proxy), DNS settings, or ad blocking.
 
 ---
 
@@ -53,19 +68,9 @@ hzvpn start &
 
 **Terminal 2 — run all commands freely**
 ```bash
-hzvpn login # login to hzvpn account
-# then follow vpn-commands skill to connect
+hzvpn login                  # login to hzvpn account
+hzvpn connect <server-id>    # connect to a server
 ```
 
 Keep Terminal 1 open for the entire session. Never close it while the VPN is in use.
 
-## Available Command Categories
-
-| Category      | Commands                                        |
-|---------------|-------------------------------------------------|
-| Daemon        | `start`, `stop`                                 |
-| VPN           | `connect`, `disconnect`, `status`               |
-| Configuration | `set --mode`, `--route`, `--local-dns`, `--ads-block` |
-| Servers       | `servers`                                       |
-| Account       | `login`, `logout`, `devices`, `profile`, `upgrade` |
-| Utility       | `help`, `--version`, `uninstall`                |
