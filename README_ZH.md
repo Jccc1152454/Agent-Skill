@@ -17,7 +17,7 @@
 以交互方式安装技能包 — 系统将提示您选择要安装的技能及目标 AI 助手。
 
 ```bash
-npx skills add hzvpn-cli-skills
+npx skills add https://github.com/Jccc1152454/Agent-Skill
 ```
 
 **推荐使用以下参数以加快安装流程：**
@@ -29,10 +29,17 @@ npx skills add hzvpn-cli-skills
 
 ```bash
 # 全局安装并自动确认所有提示
-npx skills add hzvpn-cli-skills -g -y
+npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 ```
 
 > 如果只想在当前项目中安装，请去掉 `-g` 参数。
+
+### 其他安装方式
+
+
+```bash
+npx skills add infinity-vpn/agent-skill --skill <技能名称>
+```
 
 ---
 
@@ -59,7 +66,7 @@ npx skills update [技能名称]
 
 **方式二 — 重新运行安装命令，一次性获取所有最新技能：**
 ```bash
-npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
+npx skills add https://github.com/Jccc1152454/Agent-Skill -y
 ```
 
 ---
@@ -77,6 +84,36 @@ npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 | `hzvpn-installation` | 在任意平台上安装 HZVPN CLI |
 | `hzvpn-cli-utility` | 通用工具 — 版本查询、帮助文档、卸载 |
 | `hzvpn-cli-update` | 更新 HZVPN CLI 至最新版本 |
+
+---
+
+## 示例对话
+
+安装技能后，您的 AI 助手可以在对话中自然地处理 HZVPN 相关任务。您可以尝试以下指令，助手将借助技能为您完成操作。
+
+---
+
+**安装 VPN**
+
+> 帮我安装 VPN
+
+---
+
+**连接节点**
+
+> 帮我连接到（任意）节点
+
+---
+
+**更改连接配置**
+
+> 将连接模式从全局改为智能分流
+
+---
+
+**升级会员套餐**
+
+> 升级我的会员套餐
 
 ---
 

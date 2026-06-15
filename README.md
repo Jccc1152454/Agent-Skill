@@ -36,6 +36,7 @@ npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
 
 ### Alternative options
 
+
 ```bash
 npx skills add infinity-vpn/agent-skill --skill <skill-name>
 ```
@@ -65,7 +66,7 @@ npx skills update [skill-name]
 
 **Option 2 — Re-run the install command to get all the latest skills at once:**
 ```bash
-npx skills add https://github.com/Jccc1152454/Agent-Skill -g -y
+npx skills add https://github.com/Jccc1152454/Agent-Skill -y
 ```
 
 
