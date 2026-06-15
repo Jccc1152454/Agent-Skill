@@ -93,31 +93,24 @@ npx skills add https://github.com/Jccc1152454/Agent-Skill -y
 
 Once the skills are installed, your AI agent can handle HZVPN tasks naturally in conversation. You can try the instruction below and your agent will process with skills.
 
----
 
 **Installation**
 
 > Install me a vpn
 
----
 
 **Connect to a node**
 
 > Connect me to (any) node
 
----
 
 **Change connection configuration**
 
 > Change the connection mode from global to intelligence
 
----
-
 **Upgrade membership plan**
 
 > Upgrade my membership plan
-
----
 
 ## License
 
