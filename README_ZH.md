@@ -1,5 +1,6 @@
 # HZVPN CLI 技能包
 
+```text
      ▄███▄
       █████
       ███████
@@ -11,7 +12,7 @@
  ███        ███    ██  ██  ██████     ████     ██       ██  ███
   █████  █████           ▌ HZVPN CLI ▐
     ████████
-
+```
 由 HZVPN 提供
 
 适用于 HZVPN CLI 的 AI 助手技能包 — 兼容 Claude Code、Codex CLI、Cursor、Gemini CLI 等平台。
