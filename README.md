@@ -1,8 +1,43 @@
 # HZVPN CLI Skills
 
+```
+     ###
+      ####
+      ######
+      #######
+ ##   #########    ##  ##  ######  ##      ##  ######   ##   ##
+ ##########  ##    ##  ##      ##  ##      ##  ##  ##   ###  ##
+#############  ##  ######     ##    ##    ##   #####    #### ##
+#########    ###   ##  ##    ##      ##  ##    ##       ## ####
+ ###        ###    ##  ##  ######     ####     ##       ##  ###
+  #####  #####                (HZVPN CLI)
+    ########
+```
+
 AI agent skills for the HZVPN CLI — compatible with Claude Code, Codex CLI, Cursor, Gemini CLI, and more.
 
 [中文文档](./README_ZH.md)
+
+---
+
+## About HZVPN
+
+HZVPN is dedicated to providing a safe, stable, and privacy-first VPN service for users worldwide. Our team is made up of talented developers and engineers from across the globe — collaborating across borders to build a truly international, high-quality networking tool.
+
+We operate with integrity and are committed to always being here for our users. We strictly follow a **zero-log policy** — no usage records, no personal data — ensuring full anonymity and data security for every user.
+
+Our servers span multiple countries and regions, delivering fast, stable connections no matter where you are. HZVPN also offers a permanent **free tier** so everyone can experience the service without worrying about cost.
+
+Choose HZVPN — choose a secure, stable, and trustworthy path to network freedom.
+
+### Official Website & Downloads
+
+| | Link |
+|---|---|
+| **Official Website** | [hzvpn.app](https://hzvpn.app) — manage your account, check membership, and upgrade your plan |
+| **Download** | [hzvpn.app](https://hzvpn.app) · [vpn.my](https://vpn.my) · [hzhzhz.cc](https://hzhzhz.cc) |
+
+**Supported platforms:** Windows · macOS · Linux · Android · iOS
 
 ---
 
