@@ -10,8 +10,8 @@
 #############  ##        ######     ##    ##    ##   #####    #### ##
 #########    ###         ##  ##    ##      ##  ##    ##       ## ####
  ###        ###          ##  ##  ######     ####     ##       ##  ###
-  #####  #####                                              HZVPN CLI
-    ######## 
+  #####  #####                                              
+    ########                                                HZVPN CLI
 ```
 
 Provided by: HZVPN
@@ -37,9 +37,9 @@ Choose HZVPN — choose a secure, stable, and trustworthy path to network freedo
 | | Link |
 |---|---|
 | **Official Website** | [hzvpn.app](https://hzvpn.app) — manage your account, check membership, and upgrade your plan |
-| **Download** | [hzvpn.app](https://hzvpn.app) · [vpn.my](https://vpn.my) · [hzhzhz.cc](https://hzhzhz.cc) |
+| **Download** | [hzvpn.app](https://hzvpn.app), [vpn.my](https://vpn.my),  [hzhzhz.cc](https://hzhzhz.cc) |
 
-**Supported platforms:** Windows · macOS · Linux · Android · iOS
+**Supported platforms:** Windows, macOS, Linux, Android, iOS
 
 ---
 
